@@ -13,9 +13,12 @@ public class Link {
     
     public enum State { OFF, ON }
     
+   /* public enum Type { OPTIC_FIBER, HERTZ, };*/
+    
     private Node extremity1;
     private Node extremity2;
     private State state;
+    //private Type type;
     
     public Link(Node ext1, Node ext2){
         this.extremity1 = ext1;
@@ -36,6 +39,14 @@ public class Link {
             }
         }
     }
+    
+    /*public void setType(Type type){
+        this.type = type;
+    }
+    
+    public Type getType(){
+        return type;
+    }*/
     
     public Node getOtherNode(Node node){
         if(this.extremity1 == node){

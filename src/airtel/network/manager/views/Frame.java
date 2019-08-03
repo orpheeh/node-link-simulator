@@ -168,8 +168,6 @@ public class Frame {
     public static void createSaveFile(Panel panel){
         List<NodePosition> nodePositions = panel.getNodePosition();
         
-        
-        
         try {
             PrintWriter pw = new PrintWriter(new FileOutputStream("file.sav"));
             //Nombre de noeud
